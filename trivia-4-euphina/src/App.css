@@ -8,10 +8,17 @@ body, html {
 
 .App {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
+}
+
+.app-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .card-container {
@@ -66,13 +73,13 @@ button {
 }
 
 .score-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
   font-size: 24px;
 }
 
-div {
-  text-align: center;
-  margin-top: 50px;
+.score-container p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #555;
 }

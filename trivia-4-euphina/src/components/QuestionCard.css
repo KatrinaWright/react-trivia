@@ -1,0 +1,83 @@
+/* src/components/QuestionCard.css */
+
+.card-container {
+    perspective: 1000px;
+  }
+  
+  .card {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card-front {
+    background-color: #fff;
+  }
+  
+  .card-back {
+    background-color: #f9f9f9;
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .answer {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-correct {
+    background-color: #4caf50; /* Green */
+    color: white;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .btn-incorrect {
+    background-color: #f44336; /* Red */
+    color: white;
+    flex: 1;
+    margin-left: 10px;
+  }
+  

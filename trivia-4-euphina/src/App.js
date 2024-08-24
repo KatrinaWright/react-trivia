@@ -36,8 +36,10 @@ const App = () => {
 
   return (
     <div className="App">
+      <h1 className="app-title">React Trivia Game</h1>
       <div className="score-container">
         <Score score={score} />
+        <p>{`Question ${currentQuestionIndex + 1} of ${triviaData.length}`}</p>
       </div>
       <QuestionCard
         question={triviaData[currentQuestionIndex].question}
