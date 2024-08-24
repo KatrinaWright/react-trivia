@@ -55,6 +55,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .card-front {
@@ -64,12 +65,41 @@ body, html {
 .card-back {
   background-color: #f9f9f9;
   transform: rotateY(180deg);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.answer {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 button {
-  margin: 10px;
   padding: 10px 20px;
   font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-correct {
+  background-color: #4caf50; /* Green */
+  color: white;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.btn-incorrect {
+  background-color: #f44336; /* Red */
+  color: white;
+  flex: 1;
+  margin-left: 10px;
 }
 
 .score-container {
@@ -82,4 +112,32 @@ button {
   margin: 5px 0;
   font-size: 18px;
   color: #555;
+}
+
+.results {
+  text-align: center;
+}
+
+.results h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.results p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+button[disabled] {
+  background-color: #ccc;
+}
+
+button:not([disabled]):hover {
+  background-color: #ddd;
 }
