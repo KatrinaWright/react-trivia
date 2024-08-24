@@ -1,5 +1,3 @@
-// src/components/QuestionCard.js
-
 import React, { useState } from "react";
 import "./QuestionCard.css";
 

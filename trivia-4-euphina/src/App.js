@@ -1,5 +1,3 @@
-// src/App.js
-
 import React, { useState } from "react";
 import QuestionCard from "./components/QuestionCard";
 import Score from "./components/Score";
